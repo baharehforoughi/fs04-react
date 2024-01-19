@@ -1,6 +1,11 @@
 import "./App.css";
 import Character from "./components/character";
 import charactersData from "./charactersData";
+import LikeCounter from "./components/LikeCounter";
+import LikeButton from "./components/LikeButton";
+import AwesomeAnimals from "./components/AwesomeAnimals";
+import ArticleList from "./components/ArticleList";
+
 // import something from 'some place'
 
 // App.js is the entry point to the rest of your app
@@ -22,6 +27,13 @@ function App() {
 
   return (
     <div className="App">
+      <main>
+        <h1>Some Simple Title</h1>
+        <LikeCounter />
+        <LikeButton />
+        <AwesomeAnimals />
+        <ArticleList />
+      </main>
       {/* If we want a Character component for each character in our data, we could repeat it like below: */}
       <Character
         name={charactersData[0].name}
